@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Minecraft Manifest Generator for RP and BP - LeGend077</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/minecraft-framework-css@1.1.6/css/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body id="body">   
+    <div id="body"><button class="copy- button" onclick="darkmode()">Dark Mode</button><br><button class="copy-- button" onclick="lightmode()">Light Mode</button>
+        <center><div class="">
+            <form id="content">
+                <input id="name" type="text" value="" placeholder="Name" class="input-text"><br><br>
+                <input id="description" type="text" value="" placeholder="Description" class="input-text">
+                <br><br>
+                <select id="type" class="choose">
+                    <option value="resources">Resource Pack</option>
+                    <option value="data">Behaviour Pack</option>
+                </select>
+                
+                <br><br>
+                <button type="button" onclick="generateManifest(); soundOn()" class="button">Generate</button><br>
+            </form>
+    <div class="manifest">
+        <textarea id="ManifestFile" readonly wrap="soft">Output Manifest</textarea><button type="button" onclick="copyManifest()" class="button copy"><i class='bx bx-copy-alt' ></i></button>
+    </div>
+        </div></center></div>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
