@@ -22,13 +22,14 @@
                 </select>
                 
                 <br><br>
-                <button type="button" onclick="generateManifest(); soundOn()" class="button">Generate</button><br>
+                <button type="button" onclick="generateManifest(); soundOn()" class="button">Generate</button>&nbsp;<button type="button" onclick="download(); soundOn()" class="button">Download manifest.json</button><br>
             </form>
     <div class="manifest">
         <textarea id="ManifestFile" readonly wrap="soft">Output Manifest</textarea><button type="button" onclick="copyManifest()" class="button copy"><i class='bx bx-copy-alt' ></i></button>
     </div>
         </div></center></div>
     <script src="assets/script.js"></script>
+    <script src="https://unpkg.com/file-saver@2.0.5/dist/FileSaver.js" crossorigin></script>
 </body>
 
 </html>
